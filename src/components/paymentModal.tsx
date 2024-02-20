@@ -32,8 +32,7 @@ export default function PaymentModal() {
     });
 
     if (response.ok) {
-      // handle success
-      document.getElementById("my_modal_3").close();
+      (document.getElementById("my_modal_3") as HTMLDialogElement)?.close();
     } else {
       // handle error
     }

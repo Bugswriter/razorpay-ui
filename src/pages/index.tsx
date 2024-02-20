@@ -1,6 +1,6 @@
 import PaymentModal from "@/components/paymentModal";
 import TableComp from "@/components/tables";
-import UserPayment from "@/pages/user";
+// import UserPayment from "@/pages/user";
 import Head from "next/head";
 
 export default function Home() {
@@ -17,7 +17,6 @@ export default function Home() {
         </div>
         <PaymentModal />
         <TableComp />
-        <UserPayment />
       </main>
     </>
   );
