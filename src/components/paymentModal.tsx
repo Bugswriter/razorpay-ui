@@ -43,10 +43,16 @@ export default function PaymentModal() {
       <div className="mb-6 py-8">
         <button
           className="btn btn-primary btn-xs text-lg sm:btn-sm md:btn-md lg:btn-lg"
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-          onClick={() => document.getElementById("my_modal_3").showModal()}
+          onClick={() => {
+            const modal = document.getElementById(
+              "my_modal_3",
+            ) as HTMLDialogElement | null;
+            if (modal) {
+              modal.showModal();
+            }
+          }}
         >
-          Create Payement Link
+          Create Payment Link
         </button>
       </div>
       <dialog id="my_modal_3" className="modal">
