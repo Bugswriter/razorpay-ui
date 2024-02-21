@@ -44,7 +44,7 @@ export default function UserPayment() {
   return (
     <>
       <Head>
-        <title>User Payment</title>
+        <title>Payment</title>
         <meta name="description" content="Dashboard Page Description" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
